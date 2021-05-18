@@ -1,0 +1,351 @@
+@charset "utf-8";
+/* CSS Document */
+/*----------------
+全体構造
+----------------*/
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif", "Libre Baskerville";
+  margin: 0 auto;
+  padding-top: 40px;
+}
+/*----------------
+ヘッダー
+----------------*/
+header {
+  background-color: #fff;
+  height: 70px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 1;
+}
+header .logo {
+  float: left;
+  padding: 20px 300px 0 30px;
+}
+header nav {
+  margin-left: 30px;
+  width: 1560px;
+}
+header nav ul {
+  overflow: hidden;
+}
+header nav ul .hover-img {
+  float: left;
+  margin-right: 50px;
+  padding-top: 20px;
+  list-style-type: none;
+}
+header nav ul .hover-img a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Libre Baskerville";
+}
+header nav ul .side0 {
+  float: left;
+  padding: 0px 20px 0 20px;
+  margin: 0 10px 0 50px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  list-style-type: none;
+}
+header nav ul .side1 {
+  float: left;
+  padding-right: 10px;
+  border-right: 1px solid #000;
+  list-style-type: none;
+}
+/*----------------
+フッター
+----------------*/
+footer {
+  height: 250px;
+  background-color: #e6e6e6;
+}
+footer .fot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .fot .check {
+  padding-top: 70px;
+}
+footer .fot .oyatu {
+  margin-top: 50px;
+}
+footer .fot .egg {
+  padding-top: 30px;
+}
+footer p {
+  text-align: center;
+}
+/*----------------
+メイン
+----------------*/
+/*TOP*/
+.home main .main-image img {
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+/*.home main .bx-wrapper {
+ box-shadow: none;
+ border: none;
+ left: 0;
+}*/
+.home main .whatpouta {
+  height: 840px;
+  width: 100%;
+  background-image: url("../images/main_cookie.png"), url("../images/main_pai.png"), url("../images/bg.png");
+  background-position: left bottom, right top, center center;
+  background-repeat: no-repeat, no-repeat, repeat;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: violet;
+}
+.home main .whatpouta h1 {
+  text-align: center;
+  padding-top: 110px;
+}
+.home main .whatpouta .what1 {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  font-size: 24px;
+  line-height: 36px;
+}
+.home main .whatpouta .what2 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 36px;
+}
+/*MEUN*/
+.menu main .menu-main {
+  margin-bottom: 50px;
+}
+.menu main .menu-main h1 {
+  height: 160px;
+  line-height: 160px;
+  text-align: center;
+  background-image: url("../images/bg.png");
+  background-position: center center;
+  background-repeat: repeat;
+}
+.menu main .line {
+  overflow: hidden;
+  width: 900px;
+  height: 33px;
+  margin: 0 auto;
+}
+.menu main .line h2 {
+  float: left;
+  margin-top: 0;
+}
+.menu main .tab-area {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  border-bottom: 1px solid #000;
+  float: right;
+  margin-right: 50px;
+}
+.menu main .tab {
+  padding: 0 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  position: relative;
+  top: 1px;
+  margin-right: 10px;
+  background-color:#fff;
+}
+.menu main .tab-active {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 10px;
+  position: relative;
+  top: 1px;
+}
+.menu main .content-area {
+  font-size: 30px;
+  text-align: center;
+}
+.menu main .content {
+  display: none;
+}
+.menu main .content.show {
+  margin-top: 50px;
+  display: block;
+}
+
+
+/*紹介*/
+.menu main h3 {
+  font-weight: normal;
+  font-size: 14px;
+}
+.menu main .kami {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.menu main .kami .kami-text {
+  float: left;
+}
+.menu main .kami .kami-text .cookie-pic {
+  text-align: center;
+}
+.menu main .kami .kami-text h4 {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+}
+.menu main .kami .kami-text p {
+  font-size: 12px;
+  text-align: left;
+}
+.menu main .kami .kami-text .yen {
+  text-align: left;
+}
+
+.list ul{
+  list-style-type: none;
+}
+.list li{
+  margin-left: 40px;
+}
+.list figure{
+  margin-left: 0;
+}
+
+.menu main .shimo {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.menu main .shimo .shimo-text {
+  float: left;
+  list-style-type: none;
+}
+.menu main .shimo .shimo-text .cookie-pic {
+  text-align: center;
+}
+.menu main .shimo .shimo-text h4 {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+}
+.menu main .shimo .shimo-text p {
+  font-size: 12px;
+  text-align: left;
+}
+.menu main .shimo .shimo-text .yen {
+  text-align: left;
+}
+
+.menu main .up {
+  text-align: right;
+  margin-right: 230px;
+}
+
+
+/*INFORMATION*/
+.information main {
+  margin-bottom: 40px;
+}
+.information main h1 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.information main h2 {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.information main figure {
+  text-align: center;
+}
+.information main .info {
+  overflow: hidden;
+  padding-top: 70px;
+}
+.information main .info .left {
+  float: left;
+  padding-left: 300px;
+}
+.information main .info .left h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.information main .info .left .add {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+.information main .info .left .time {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.information main .info .left .open {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.information main .info .left .close {
+  font-size: 28px;
+  font-weight: normal;
+}
+.information main .info .right {
+  float: right;
+  padding-right: 300px;
+  padding-top: 10px;
+}
+/*concept*/
+.concept main h1 {
+  height: 160px;
+  line-height: 160px;
+  text-align: center;
+  background-image: url("../images/bg.png");
+  background-position: center center;
+  background-repeat: repeat;
+}
+/*news*/
+.news main h1 {
+  height: 160px;
+  line-height: 160px;
+  text-align: center;
+  background-image: url("../images/bg.png");
+  background-position: center center;
+  background-repeat: repeat;
+}
+.news .bb {
+  margin: 40px 20px;
+  list-style-type: none;
+}
+.news .aa {
+  display: flex;
+  margin: 0 auto;
+}
+.news a {
+  text-decoration: none;
+  color: #000;
+}
+
