@@ -328,6 +328,9 @@ footer p {
   background-repeat: repeat;
 }
 /*news*/
+.news main {
+  margin-bottom: 70px;
+}
 .news main h1 {
   height: 160px;
   line-height: 160px;
@@ -342,7 +345,7 @@ footer p {
 }
 .news .aa {
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
 }
 .news a {
   text-decoration: none;
